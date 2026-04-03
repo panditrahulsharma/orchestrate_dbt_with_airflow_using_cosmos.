@@ -1,0 +1,11 @@
+{"timestamp":"2026-04-02T16:33:23.903807Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 127. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-04-02T16:33:24.011738Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-02T16:33:24.011948Z","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_asset_decorator.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-02T16:33:24.707464Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.707616Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.707728Z","level":"info","event":"Current task name:process_nothing","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.707795Z","level":"info","event":"Dag name:consumes_asset_decorator","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.708106Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-04-02T16:33:24.715001Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.715087Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-02T16:33:24.715203Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): process_nothing>","logger":"task.stdout"}

@@ -1,0 +1,63 @@
+{"timestamp":"2026-04-02T20:15:49.425103Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1558. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-04-02T20:15:49.437314Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-02T20:15:49.437554Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/product_reporting.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-02T20:15:49.439648Z","level":"info","event":"::group::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":274}
+{"timestamp":"2026-04-02T20:15:49.439987Z","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__basic_cosmos_dag...","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":689}
+{"timestamp":"2026-04-02T20:15:49.450993Z","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__basic_cosmos_dag for current version: 0.004900374999124324","logger":"cosmos.cache","filename":"cache.py","lineno":345}
+{"timestamp":"2026-04-02T20:15:49.451090Z","level":"info","event":"Cosmos performance [39c1bccfc631|1558]: The cache size for cosmos_cache__basic_cosmos_dag is 21741","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":706}
+{"timestamp":"2026-04-02T20:15:49.451387Z","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__basic_cosmos_dag - d98397bc68fa791628916bda9a565a1d,d41d8cd98f00b204e9800998ecf8427e","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":714}
+{"timestamp":"2026-04-02T20:15:49.451873Z","level":"info","event":"Total nodes: 28","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":619}
+{"timestamp":"2026-04-02T20:15:49.451931Z","level":"info","event":"Total filtered nodes: 28","logger":"cosmos.dbt.graph","filename":"graph.py","lineno":620}
+{"timestamp":"2026-04-02T20:15:49.459274Z","level":"info","event":"Cosmos performance (basic_cosmos_dag) -  [39c1bccfc631|1558]: It took 0.0193s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter","filename":"converter.py","lineno":321}
+{"timestamp":"2026-04-02T20:15:49.464854Z","level":"info","event":"Cosmos performance (basic_cosmos_dag) - [39c1bccfc631|1558]: It took 0.00559s to build the Airflow DAG.","logger":"cosmos.converter","filename":"converter.py","lineno":367}
+{"timestamp":"2026-04-02T20:15:49.464909Z","level":"info","event":"::endgroup::Cosmos DAG parsing logs","logger":"cosmos.converter","filename":"converter.py","lineno":370}
+{"timestamp":"2026-04-02T20:15:49.920576Z","level":"info","event":"dbtRunner is available. Using dbtRunner for invoking dbt.","logger":"cosmos.operators.local","filename":"local.py","lineno":262}
+{"timestamp":"2026-04-02T20:15:49.920916Z","level":"info","event":"Cloning project to writable temp directory /tmp/tmptu0i4am0 from /opt/airflow/dags/include/jaffle_shop","logger":"cosmos.operators.local","filename":"local.py","lineno":494}
+{"timestamp":"2026-04-02T20:15:49.923318Z","level":"info","event":"Partial parse is enabled and the latest partial parse file is /tmp/cosmos/basic_cosmos_dag/target/partial_parse.msgpack","logger":"cosmos.operators.local","filename":"local.py","lineno":514}
+{"timestamp":"2026-04-02T20:15:49.927236Z","level":"info","event":"Profile caching is enable.","logger":"cosmos.config","filename":"config.py","lineno":384}
+{"timestamp":"2026-04-02T20:15:49.933343Z","level":"info","event":"Profile found in cache using profile: /tmp/cosmos/profile/ff9ee88690030f97e4d80e74a591a9f71c64d9142b7e48e1a3bcfebe23a7f63d/profiles.yml.","logger":"cosmos.config","filename":"config.py","lineno":364}
+{"timestamp":"2026-04-02T20:15:49.934029Z","level":"info","event":"Trying to run dbtRunner with:\n ['deps', '--project-dir', '/tmp/tmptu0i4am0', '--profiles-dir', '/tmp/cosmos/profile/ff9ee88690030f97e4d80e74a591a9f71c64d9142b7e48e1a3bcfebe23a7f63d', '--profile', 'jaffle_shop', '--target', 'dev', '--no-static-parser']\n in /tmp/tmptu0i4am0","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-04-02T20:15:49.961339Z","level":"info","event":"\u001b[0m20:15:49  Running with dbt=1.11.7","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:49.963068Z","level":"info","event":"\u001b[0m20:15:49  [\u001b[33mWARNING\u001b[0m][MissingPlusPrefixDeprecation]: Deprecated functionality","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:49.963144Z","level":"info","event":"Missing '+' prefix on `materialized` found at `jaffle_shop.staging.materialized`","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:49.963216Z","level":"info","event":"in file `/tmp/tmptu0i4am0/dbt_project.yml`. Hierarchical config values without a","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:49.963293Z","level":"info","event":"'+' prefix are deprecated in dbt_project.yml.","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.130445Z","level":"info","event":"\u001b[0m20:15:50  Updating lock file in file path: /tmp/tmptu0i4am0/package-lock.yml","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.133151Z","level":"info","event":"\u001b[0m20:15:50  Installing dbt-labs/dbt_utils","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.461445Z","level":"info","event":"\u001b[0m20:15:50  Installed from version 1.1.1","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.461643Z","level":"info","event":"\u001b[0m20:15:50  Updated version available: 1.3.3","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.461971Z","level":"info","event":"\u001b[0m20:15:50","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462117Z","level":"info","event":"\u001b[0m20:15:50  Updates available for packages: ['dbt-labs/dbt_utils']","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462191Z","level":"info","event":"Update your versions in packages.yml, then run dbt deps","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462632Z","level":"info","event":"\u001b[0m20:15:50  [\u001b[33mWARNING\u001b[0m][DeprecationsSummary]: Deprecated functionality","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462701Z","level":"info","event":"Summary of encountered deprecations:","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462781Z","level":"info","event":"- MissingPlusPrefixDeprecation: 2 occurrences","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462856Z","level":"info","event":"To see all deprecation instances instead of just the first occurrence of each,","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.462929Z","level":"info","event":"run command again with the `--show-all-deprecations` flag. You may also need to","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.463006Z","level":"info","event":"run with `--no-partial-parse` as some deprecations are only encountered during","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:50.463088Z","level":"info","event":"parsing.","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.009532Z","level":"info","event":"Trying to run dbtRunner with:\n ['seed', '--select', 'fqn:jaffle_shop.raw_orders', '--full-refresh', '--project-dir', '/tmp/tmptu0i4am0', '--profiles-dir', '/tmp/cosmos/profile/ff9ee88690030f97e4d80e74a591a9f71c64d9142b7e48e1a3bcfebe23a7f63d', '--profile', 'jaffle_shop', '--target', 'dev', '--no-static-parser']\n in /tmp/tmptu0i4am0","logger":"cosmos.dbt.runner","filename":"runner.py","lineno":98}
+{"timestamp":"2026-04-02T20:15:51.013352Z","level":"info","event":"\u001b[0m20:15:51  Running with dbt=1.11.7","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.083321Z","level":"info","event":"\u001b[0m20:15:51  Registered adapter: postgres=1.10.0","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.402785Z","level":"info","event":"\u001b[0m20:15:51  Found 5 models, 3 seeds, 20 data tests, 580 macros","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.403785Z","level":"info","event":"\u001b[0m20:15:51","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.403918Z","level":"info","event":"\u001b[0m20:15:51  Concurrency: 1 threads (target='dev')","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.404058Z","level":"info","event":"\u001b[0m20:15:51","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.453425Z","level":"info","event":"\u001b[0m20:15:51  1 of 1 START seed file public.raw_orders ....................................... [RUN]","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.513959Z","level":"info","event":"\u001b[0m20:15:51  1 of 1 OK loaded seed file public.raw_orders ................................... [\u001b[32mCREATE 99\u001b[0m in 0.06s]","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.521982Z","level":"info","event":"\u001b[0m20:15:51","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.522172Z","level":"info","event":"\u001b[0m20:15:51  Finished running 1 seed in 0 hours 0 minutes and 0.12 seconds (0.12s).","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.538461Z","level":"info","event":"\u001b[0m20:15:51","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.538615Z","level":"info","event":"\u001b[0m20:15:51  \u001b[32mCompleted successfully\u001b[0m","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.538723Z","level":"info","event":"\u001b[0m20:15:51","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.538902Z","level":"info","event":"\u001b[0m20:15:51  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539241Z","level":"info","event":"\u001b[0m20:15:51  [\u001b[33mWARNING\u001b[0m][DeprecationsSummary]: Deprecated functionality","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539351Z","level":"info","event":"Summary of encountered deprecations:","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539465Z","level":"info","event":"- MissingPlusPrefixDeprecation: 2 occurrences","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539534Z","level":"info","event":"To see all deprecation instances instead of just the first occurrence of each,","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539595Z","level":"info","event":"run command again with the `--show-all-deprecations` flag. You may also need to","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539654Z","level":"info","event":"run with `--no-partial-parse` as some deprecations are only encountered during","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:51.539711Z","level":"info","event":"parsing.","logger":"task.stdout"}
+{"timestamp":"2026-04-02T20:15:52.101135Z","level":"info","event":"Inlets: []","logger":"cosmos.operators.local","filename":"local.py","lineno":571}
+{"timestamp":"2026-04-02T20:15:52.101231Z","level":"info","event":"Outlets: []","logger":"cosmos.operators.local","filename":"local.py","lineno":572}
+{"timestamp":"2026-04-02T20:15:52.101296Z","level":"info","event":"Assigning outlets with DatasetAlias in Airflow 3","logger":"cosmos.operators.local","filename":"local.py","lineno":839}
